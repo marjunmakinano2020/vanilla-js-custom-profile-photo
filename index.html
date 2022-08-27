@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Avatar</title>
 
-    <script>
-        const avatar = document.getElementById('avatar')
-        const username = 'Charles Kasasira' // will be fetching the username, just used my to illustrate
-        const firstNameInitial = username[0]
-        const secondNameInitial = username.split(' ')[1].split('')[0]
-        avatar.innerHTML= firstNameInitial + secondNameInitial
-    </script>
-
     <style>
         #avatar{
             width: 50px;
@@ -30,5 +22,13 @@
 <body>
     <!-- div for the avatar -->
     <div id="avatar"></div>
+
+    <script>
+        const avatar = document.getElementById('avatar')
+        const username = 'Charles Kasasira' // will be fetching the username, just used my to illustrate
+        const firstNameInitial = username[0]
+        const secondNameInitial = username.split(' ')[1].split('')[0]
+        avatar.innerHTML= firstNameInitial + secondNameInitial
+    </script>
 </body>
 </html>
